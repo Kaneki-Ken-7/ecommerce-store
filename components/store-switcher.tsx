@@ -1,4 +1,5 @@
 "use client";
+
 import { Store } from "@prisma/client";
 import { useParams, useRouter } from "next/navigation";
 import {
@@ -61,7 +62,7 @@ export default function StoreSwitcher({
           size={"sm"}
           role="combobox"
           aria-expanded={open}
-          aria-label="Select a Store"
+          aria-label="Select a store"
           className={cn("w-[200px] justify-between", classname)}
         >
           <StoreIcon className="mr-2 h-4 w-4" />
